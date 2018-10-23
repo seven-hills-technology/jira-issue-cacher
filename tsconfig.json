@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "noImplicitAny": true,
+      "allowJs": true,
+      "sourceMap": true,
+      "allowSyntheticDefaultImports": true,
+      "moduleResolution": "node",
+      "lib": ["es2015", "es2017"]
+    }
+  }

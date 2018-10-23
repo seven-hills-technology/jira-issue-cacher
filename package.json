@@ -1,0 +1,15 @@
+{
+  "name": "jira-issue-cacher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/redis": "^2.8.7",
+    "axios": "^0.18.0",
+    "redis": "^2.8.0"
+  }
+}
