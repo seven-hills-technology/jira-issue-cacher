@@ -12,7 +12,7 @@ This application requires:
 ## Running
 ### Development build:
 ```
-yarn start
+JIRA_API_BASE_URL=https://${org_specific_jira_subdomain}.atlassian.net/rest/api/3 JIRA_API_AUTH_HEADER_VALUE=${base64_encoded_jira_key} yarn start
 ```
 ### Adding as a startup script on MacOS:
 Add the following file to ~/Library/LaunchAgents/com.sevenhillstechnology.jira-issue-cacher.plist:
@@ -29,6 +29,8 @@ Add the following file to ~/Library/LaunchAgents/com.sevenhillstechnology.jira-i
     <dict>
         <key>JIRA_API_AUTH_HEADER_VALUE</key>
         <string>Basic ${base_64_encoded_jira_key}</string>
+        <key>JIRA_API_BASE_URL</key>
+        <string>https://${org_specific_jira_subdomain}.atlassian.net/rest/api/3</string>
     </dict>
     <key>ProgramArguments</key>
     <array>
